@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Web.Models.TourViewModel>
+
+@{
+    ViewBag.Title = "Tours";
+}
+
+<h2>Tours</h2>
+
+@if (User.Identity.IsAuthenticated && (User.IsInRole("manager") || User.IsInRole("admin")))
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
+
+@using (Html.BeginForm())
+{
+    <p>
+        Enter Country: @Html.TextBox("Counrty")
+        Enter Region: @Html.TextBox("Region")
+        Enter Duration: @Html.TextBox("Duration")
+        Hot tours: @Html.CheckBox("isHotTours", false)
+        <input type="submit" value="Filter" />
+    </p>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TourId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hotel)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TourId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Region)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hotel)
+            </td>
+
+            <td>
+                @if (User.Identity.IsAuthenticated && (User.IsInRole("manager") || User.IsInRole("admin")))
+                {
+                    @Html.ActionLink("Delete", "Delete", new { id = item.TourId })
+                }
+                @Html.ActionLink("Order", "Create", "Order", new { id = item.TourId }, null)
+            </td>
+        </tr>
+    }
+</table>
+

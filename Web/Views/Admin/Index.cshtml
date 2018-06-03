@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Web.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Users</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Roles)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @if (item.Roles.Contains("admin")) 
+            { 
+                @Html.Label("admin")
+            }
+            else if(item.Roles.Contains("manager"))
+            {
+                @Html.Label("manager")
+            }
+            else
+            {
+                @Html.Label("user")
+            }
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", item)
+            @Html.ActionLink("Delete", "Delete", new { id = item.Email })
+        </td>
+    </tr>
+}
+
+</table>

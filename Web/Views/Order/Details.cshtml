@@ -1,0 +1,57 @@
+﻿@model Web.Models.OrderViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Order</legend>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Id)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Id)
+    </div>
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Transport)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Transport)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Hotel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Hotel)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.NumberOfPerson)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NumberOfPerson)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Tour.StartDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tour.StartDate)
+    </div>
+
+    <div class="display-label">
+        @Html.DisplayNameFor(model => model.Tour.Country)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tour.Country)
+    </div>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
