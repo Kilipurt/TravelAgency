@@ -1,0 +1,16 @@
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\UserStore.DAL.dll.config
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\UserStore.DAL.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\UserStore.DAL.pdb
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\EntityFramework.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\EntityFramework.xml
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\obj\Debug\UserStore.DAL.csprojResolveAssemblyReference.cache
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\obj\Debug\UserStore.DAL.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\obj\Debug\UserStore.DAL.pdb
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\Ninject.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\UserStore.DAL\bin\Debug\Ninject.xml
