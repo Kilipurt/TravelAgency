@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E10D35A-249B-4223-819B-D1FAB1AB07FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EF\TourDBContext.cs" />
+    <Compile Include="Entities\Hotel.cs" />
+    <Compile Include="Entities\HotelReservation.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\Tour.cs" />
+    <Compile Include="Interfaces\IGenericRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Migrations\201805162116017_first.cs" />
+    <Compile Include="Migrations\201805162116017_first.Designer.cs">
+      <DependentUpon>201805162116017_first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805171242426_orderChange.cs" />
+    <Compile Include="Migrations\201805171242426_orderChange.Designer.cs">
+      <DependentUpon>201805171242426_orderChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805171249572_tourId.cs" />
+    <Compile Include="Migrations\201805171249572_tourId.Designer.cs">
+      <DependentUpon>201805171249572_tourId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805171951003_tourOrders.cs" />
+    <Compile Include="Migrations\201805171951003_tourOrders.Designer.cs">
+      <DependentUpon>201805171951003_tourOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805172126561_Order.cs" />
+    <Compile Include="Migrations\201805172126561_Order.Designer.cs">
+      <DependentUpon>201805172126561_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805172210268_orderTourId.cs" />
+    <Compile Include="Migrations\201805172210268_orderTourId.Designer.cs">
+      <DependentUpon>201805172210268_orderTourId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201806021625312_addHotel.cs" />
+    <Compile Include="Migrations\201806021625312_addHotel.Designer.cs">
+      <DependentUpon>201806021625312_addHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\GenericRepository.cs" />
+    <Compile Include="Repository\UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805162116017_first.resx">
+      <DependentUpon>201805162116017_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805171242426_orderChange.resx">
+      <DependentUpon>201805171242426_orderChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805171249572_tourId.resx">
+      <DependentUpon>201805171249572_tourId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805171951003_tourOrders.resx">
+      <DependentUpon>201805171951003_tourOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805172126561_Order.resx">
+      <DependentUpon>201805172126561_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805172210268_orderTourId.resx">
+      <DependentUpon>201805172210268_orderTourId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806021625312_addHotel.resx">
+      <DependentUpon>201806021625312_addHotel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
