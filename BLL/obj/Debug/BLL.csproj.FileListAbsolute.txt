@@ -1,0 +1,13 @@
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\BLL.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\BLL.pdb
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\AutoMapper.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\DAL.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\Ninject.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\EntityFramework.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\DAL.pdb
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\AutoMapper.xml
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\Ninject.xml
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\bin\Debug\EntityFramework.xml
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\obj\Debug\BLL.dll
+D:\UniversityFiles\Software architecture\TravelAgency\Web\BLL\obj\Debug\BLL.pdb
